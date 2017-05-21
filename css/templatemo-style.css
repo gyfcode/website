@@ -443,9 +443,9 @@ h1, h2, h3, h4, h5 {
   background: url(../images/gyf.jpg);
   background-size: 100%;
 }
-.logo-top-margin a:hover{
+/*.logo-top-margin a:hover{
   background: url(../images/logo_02.png);  
-}
+}*/
 @media screen and (max-width: 992px) {
   .logo-top-margin {
     margin-top: 0!important;
@@ -594,6 +594,8 @@ h1, h2, h3, h4, h5 {
 /*------ projects ------ */
 .gallery-section .project-item {
   margin-bottom: 30px;
+  /*border-radius: 32px;*/
+  overflow: hidden;
 }
 
 .project-item {
@@ -603,11 +605,13 @@ h1, h2, h3, h4, h5 {
 .project-item img {
   width: 100%;
   display: block;
+  border-radius: 32px;
 }
 .project-item:hover .project-hover {
   opacity: 1;
   visibility: visible;
   bottom: 0;
+
 }
 
 .project-hover {
@@ -618,6 +622,7 @@ h1, h2, h3, h4, h5 {
   background: rgba(0, 0, 0, 0.8);
   opacity: 0;
   visibility: hidden;
+  border-radius: 0 0 32px 32px;
   padding: 14px 20px;
   -webkit-transition: all 200ms linear;
   -moz-transition: all 200ms linear;
